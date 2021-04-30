@@ -41,7 +41,7 @@ let myStyle = {
 }
 
 // Accessing the Toronto neighborhoods GeoJSON URL.
-let torontoHoods = "https://raw.githubusercontent.com/<GitHub_name>/Mapping_Earthquakes/main/torontoNeighborhoods.json";
+let torontoHoods = "https://raw.githubusercontent.com/<GitHub_name>/Mapping_Earthquakes/Mapping_GeoJSON_Polygons/torontoNeighborhoods.json";
 
 // Grabbing our GeoJSON data.
 d3.json(torontoHoods).then(function (data) {
