@@ -19,29 +19,7 @@ let satelliteStreets = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/sate
 let dark = L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}?access_token={accessToken}', {
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery (c) <a href="https://www.mapbox.com/">Mapbox</a>',
 	maxZoom: 18,
-	accessToken: API_KEY# Mapping Earthquake Challenge
-
-    # Purpose
-    
-    Create an interactive world map to display GeoJSON geographical and Tectonic 
-    Plate date to visualize earthquake data. Map center coordinates are 40.7, -94.5. The 
-    data overlays allow viewing if either or all earthquakes, tectonic plates and major 
-    earthquakes. Varying sizes and colors indicate earthquakes and their magnitude
-    with the largest, those measuring greater than 5.0 in red. Click on a circle to 
-    see magnitude and location.
-    
-    # Tools Used
-    
-    - Leaflet.js library
-    - Javascript
-    - Mapbox API
-    - GeoJSON data from the USGS website:
-    (https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson
-    - Tectonic Plate data from a GitHub repository:
-    https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json
-    - GeoJSON Summary Feed for M4.5+ Earthquakes for past 7 days:
-    https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/4.5_week.geojson
-    
+	accessToken: API_KEY
 });
 
 // Create the map object with center, zoom level and default layer.
